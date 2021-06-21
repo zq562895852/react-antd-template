@@ -1,0 +1,8 @@
+// 全局样式
+// 变量文件
+@import "variables";
+// 默认样式重置
+@import "reboot";
+// 混入
+@import "mixin"
+// 公共样式采用variables中定义的，如果没有可以自己定义，尽量采用全局公共变量的方式定义

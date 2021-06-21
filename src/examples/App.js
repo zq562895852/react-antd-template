@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-// import './assets/style/index.scss';
 // 可以利用这里的方法进行路由跳转
-import { add } from './redux/actions/loginAction';
+import { add } from '../redux/actions/loginAction';
 import { Button } from 'antd';
 
 const mapStateToProps = (state) => {

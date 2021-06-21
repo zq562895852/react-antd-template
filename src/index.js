@@ -4,15 +4,19 @@ import { Route, HashRouter, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store, { persistor } from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
-import App from './App';
-
+// 引入全局样式
+import './assets/style/index.scss';
+// 根组件
+import App from './app/App';
+import TestReduxHooks from './examples/TestReduxHooks.js'
 
 ReactDOM.render(
 	<Provider store={store}>
 		<PersistGate loading={null} persistor={persistor}>
 				<HashRouter>
 					<Switch>
-						<Route exact path="/" component={App} />
+					<Route exact path="/" component={App} />
+					<Route  path="/test" component={TestReduxHooks} />
 					</Switch>
 				</HashRouter>
 		</PersistGate>
