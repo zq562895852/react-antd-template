@@ -1,11 +1,18 @@
 
-### `yarn start`  启动开发环境
+### 环境脚本
 
-### `yarn test`  测试
+   + `yarn start`  启动开发环境
+   + `yarn test`  测试
+   + `yarn build`  打包
+   + `yarn eject`  弹出配置，不可逆
 
-### `yarn build`  打包
-
-### `yarn eject`  弹出配置，不可逆
+### 配置说明(如有新增，请添加)
+   + react-app-rewired 自定义配置文件使用的包
+   + config-overrides.js 自定义的配置文件
+   + addDecoratorsLegacy  开启装饰器支持
+   + fixBabelImports antd组件库配置
+   + addLessLoader  less加载器配置
+   + overrideDevServer 开发环境配置
 
 ### 分支说明
    + 分支规范
@@ -30,14 +37,6 @@
       -   ci: git ci 相关修改；
 
 
-### 配置说明(如有新增，请添加)
-   + config-overrides.js 自定义的配置文件
-   + addDecoratorsLegacy  开启装饰器支持
-   + fixBabelImports antd组件库配置
-   + addLessLoader  less加载器配置
-   + overrideDevServer 开发环境配置
-
-
 ### 项目结构
    + api  api相关文件
    + assets 静态文件
@@ -57,18 +56,18 @@
 ### 基础组件
    + Button.js 基础button组件
 
-### 示例文件说明(examples文件夹)
+### 示例文件(examples文件夹)
   + App.js  redux 集成使用
   + TestReduxHooks.js  redux-hooks使用
 
-### hooks功能说明
+### hooks功能
    。。。
 
-### pages页面说明
+### pages页面
   。。。
 
 
-### utils公共工具说明
+### utils公共工具
   。。。
 
 
