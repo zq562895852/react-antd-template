@@ -4,7 +4,41 @@
    + `yarn start`  启动开发环境
    + `yarn test`  测试
    + `yarn build`  打包
+   + `yarn lint`  eslint检测脚本
    + `yarn eject`  弹出配置，不可逆
+### package.json说明
+   + commit提交前执行 `npm run lint` 检测
+   ```bash
+    "husky": {
+        "hooks": {
+          "pre-commit": "npm run lint"
+        }
+      }
+   ```
+   + husky 配置方法
+     ```bash
+     {
+        "precommit": "foo, bar, test"
+        "pre-commit": "foo, bar, test"
+        "pre-commit": ["foo", "bar", "test"]
+        "precommit": ["foo", "bar", "test"],
+        "precommit": {
+          "run": "foo, bar, test",
+        },
+        "pre-commit": {
+          "run": ["foo", "bar", "test"],
+        },
+        "precommit": {
+          "run": ["foo", "bar", "test"],
+        },
+        "pre-commit": {
+          "run": "foo, bar, test",
+        }
+      }
+     ```
+
+     + 
+
 
 ### 配置说明(如有新增，请添加)
    + react-app-rewired 自定义配置文件使用的包

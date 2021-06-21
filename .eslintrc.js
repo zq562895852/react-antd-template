@@ -31,7 +31,7 @@ module.exports = {
 		sourceType: 'module'
 	},
 	plugins: [ 'react' ],
-	// 设置全局变量
+	// 设置全局变量，没有用到的可以删除
 	globals: {
 		__DEV__: false,
 		__dirname: false,
