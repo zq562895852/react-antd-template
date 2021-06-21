@@ -5,7 +5,9 @@ module.exports = {
 		browser: true,
 		commonjs: true,
 		//启用除了modules以外的所有ES6特性（该选项会自动设置 ecmaVersion 解析器选项为 6）
-		es6: true
+		es6: true,
+		// 测试库
+		jest: true
 	},
 
 	extends: [
@@ -55,8 +57,7 @@ module.exports = {
    * "warn" 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出),
    * "error" 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
    */
-    rules: {
-        
+	rules: {
 		'no-cond-assign': 2,
 		'no-console': [
 			'error',
@@ -389,9 +390,9 @@ module.exports = {
 		//为用户定义的JSX组件强制使用PascalCase
 		'react/jsx-pascal-case': 0,
 		//防止反应被错误地标记为未使用
-        // 忽略react没引入报错
+		// 忽略react没引入报错
 		'react/jsx-uses-react': 'off',
-		
+
 		// 'react/jsx-uses-react': 2,
 		//防止在JSX中使用的变量被错误地标记为未使用
 		'react/jsx-uses-vars': 2,
@@ -406,7 +407,7 @@ module.exports = {
 		//防止在React组件定义中丢失props验证
 		// "react/prop-types": 1,
 		//使用JSX时防止丢失React
-        'react/react-in-jsx-scope': 'off',
+		'react/react-in-jsx-scope': 'off',
 		// 'react/react-in-jsx-scope': 2,
 		//防止没有children的组件的额外结束标签
 		'react/self-closing-comp': 0,
