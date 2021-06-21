@@ -10,14 +10,11 @@
 
 ### 分支说明
    + 分支规范
-      - 功能分支
-         feature/*
-      - 修补bug分支
-         fixbug/*
-      - 紧急bug分支
-         hotfix/*
-      - 测试分支
-         test/*
+      - 功能分支：feature/*；
+      - 修补bug分支：fixbug/*；
+      - 紧急bug分支：hotfix/*；
+      - 样式分支：style/*;
+      - 测试分支：test/*；
    + 提交规范
       - `type` 代表某次提交的类型，比如是修复一个 bug 还是增加一个新的 feature。所有的 type 类型如下：
 
