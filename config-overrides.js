@@ -1,13 +1,16 @@
+const path = require('path');
 const {
 	override,
 	overrideDevServer,
 	addDecoratorsLegacy,
 	fixBabelImports,
 	addLessLoader,
+	useEslintRc,
 	watchAll
 } = require('customize-cra');
 // 主题
 const themeColor = require('./src/theme/theme-color-config.js')
+
 module.exports = {
 	webpack: override(
 		// usual webpack plugin

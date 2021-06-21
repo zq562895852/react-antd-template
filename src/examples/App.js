@@ -5,32 +5,28 @@ import { Link } from 'react-router-dom';
 import { add } from '../redux/actions/loginAction';
 import { Button } from 'antd';
 
-const mapStateToProps = (state) => {
-	return {
-		count: state.loginReducer
-	};
-};
+const mapStateToProps = (state) => ({
+  count: state.loginReducer
+});
 
-const mapDispatchToProps = (dispatch) => {
-	return {
-		add: (...args) => dispatch(add(...args))
-	};
-};
+const mapDispatchToProps = (dispatch) => ({
+  add: (...args) => dispatch(add(...args))
+});
 
 // 装饰器
 @connect(mapStateToProps, mapDispatchToProps)
 class App extends Component {
-	// constructor(props) {
-	//   super(props)
-	// }
-	handleClick() {
-		console.log(this.props);
-	}
-	render() {
+  // constructor(props) {
+  //   super(props)
+  // }
+  handleClick () {
+    console.log(this.props);
+  }
+  render () {
     return <div >about
-       <Button type="primary">Primary Button</Button>
+      <Button type="primary">Primary Button</Button>
     </div>;
-	}
+  }
 }
 
 export default App;

@@ -12,10 +12,10 @@ import rootReducer from '../reducers/index';
 import storageSession from 'redux-persist/lib/storage/session'
 
 // 持久化缓存配置
-const persistConfig = {  
-  key: 'root', // 必须有的  
-  storage:storageSession, // 缓存机制  
-  // blacklist: ['loginStatus'] reducer 里不持久化的数据,除此外均为持久化数据  
+const persistConfig = {
+  key: 'root', // 必须有的
+  storage: storageSession, // 缓存机制
+  // blacklist: ['loginStatus'] reducer 里不持久化的数据,除此外均为持久化数据
   whitelist: [] // reducer 里持久化的数据,除此外均为不持久化数据
 }
 // 持久化的reducer

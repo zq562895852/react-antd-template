@@ -11,15 +11,15 @@ import App from './app/App';
 import TestReduxHooks from './examples/TestReduxHooks.js'
 
 ReactDOM.render(
-	<Provider store={store}>
-		<PersistGate loading={null} persistor={persistor}>
-				<HashRouter>
-					<Switch>
-					<Route exact path="/" component={App} />
-					<Route  path="/test" component={TestReduxHooks} />
-					</Switch>
-				</HashRouter>
-		</PersistGate>
-	</Provider>,
-	document.getElementById('root')
+  <Provider store={store}>
+    <PersistGate loading={null} persistor={persistor}>
+      <HashRouter>
+        <Switch>
+          <Route exact path="/" component={App} />
+          <Route  path="/test" component={TestReduxHooks} />
+        </Switch>
+      </HashRouter>
+    </PersistGate>
+  </Provider>,
+  document.getElementById('root')
 );
