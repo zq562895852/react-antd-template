@@ -40,11 +40,7 @@
     "eject": "react-app-rewired eject",
     "lint": "eslint --fix --ext .js,jsx  src"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint"
-    }
-  },
+  
   "eslintConfig": {
     "extends": [
       "react-app",
