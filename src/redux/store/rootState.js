@@ -1,3 +1,5 @@
-export const  rootState = {
-  count: 0
-}
+import createHttp from '@/axios';
+const http = createHttp()
+export const rootState = {
+	 http
+};

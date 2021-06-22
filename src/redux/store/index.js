@@ -25,7 +25,7 @@ const persistedReducer = persistReducer(persistConfig, rootReducer)
 const logger = createLogger({
   // ...options
 });
-// store
+// store  createStore 接收三个参数 reducer, preloadedState, enhancer。
 let store = createStore(persistedReducer, applyMiddleware(logger, thunk));
 export const persistor = persistStore(store)
 export default store;

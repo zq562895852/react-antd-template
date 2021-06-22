@@ -9,6 +9,7 @@ import './assets/style/index.scss';
 // 根组件
 import App from './app/App';
 import TestReduxHooks from './examples/TestReduxHooks.js'
+import TestLazy from './examples/TestLazy'
 
 ReactDOM.render(
   <Provider store={store}>
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/" component={App} />
           <Route  path="/test" component={TestReduxHooks} />
+          <Route  path="/lazy" component={TestLazy} />
         </Switch>
       </HashRouter>
     </PersistGate>
